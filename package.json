@@ -1,0 +1,19 @@
+{
+  "name": "recupera-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini-CRM de recuperação de oportunidades de venda perdidas, com distribuição automática e acompanhamento da equipe",
+  "author": "Leonardo (https://github.com/LeonardoBonatti)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch server/index.js",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "db:setup": "node --env-file-if-exists=.env scripts/setup.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}

@@ -1,0 +1,30 @@
+# ── Dependências e builds ───────────────────────────────────────
+node_modules/
+.vercel/
+data/
+
+# ── Segredos e configuração local (nunca versionar) ─────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Dados de clientes e documentos internos (nunca versionar) ───
+# Planilhas com CNPJ/CPF, telefones e valores; apresentações; manuais com credenciais.
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.csv
+*.pptx
+*.pdf
+
+# ── Logs e arquivos do sistema/editor ───────────────────────────
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
